@@ -30,15 +30,15 @@ print()
 
 # Load Dataset
 train_data = object_detector.DataLoader.from_pascal_voc(
-    'android_figurine/train',
-    'android_figurine/train',
-    ['android', 'pig_android']
+    'license_plate/train',
+    'license_plate/train',
+    ['license']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'android_figurine/validate',
-    'android_figurine/validate',
-    ['android', 'pig_android']
+    'license_plate/validate',
+    'license_plate/validate',
+    ['license']
 )
 
 # Load model spec
