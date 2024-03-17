@@ -30,14 +30,14 @@ print()
 
 # Load Dataset
 train_data = object_detector.DataLoader.from_pascal_voc(
-    'license_plate/train',
-    'license_plate/train',
+    'license_plates/train',
+    'license_plates/train',
     ['license']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'license_plate/validate',
-    'license_plate/validate',
+    'license_plates/validate',
+    'license_plates/validate',
     ['license']
 )
 
@@ -49,7 +49,7 @@ spec = object_detector.EfficientDetSpec(
   hparams={'max_instances_per_image': 8000})
 
 # Train the model
-model = object_detector.create(train_data, model_spec=spec, batch_size=1, train_whole_model=True, epochs=20, validation_data=val_data)
+model = object_detector.create(train_data, model_spec=spec, batch_size=4, train_whole_model=True, epochs=20, validation_data=val_data)
 
 # Evaluate the model
 eval_result = model.evaluate(val_data)
