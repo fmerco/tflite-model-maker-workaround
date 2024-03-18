@@ -30,14 +30,14 @@ print()
 
 # Load Dataset
 train_data = object_detector.DataLoader.from_pascal_voc(
-    'license_ocr/train',
-    'license_ocr/train',
+    'license-ocr/train',
+    'license-ocr/train',
     ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'license_ocr/validate',
-    'license_ocr/validate',
+    'license-ocr/validate',
+    'license-ocr/validate',
     ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 )
 
