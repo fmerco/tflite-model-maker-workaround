@@ -32,13 +32,13 @@ print()
 train_data = object_detector.DataLoader.from_pascal_voc(
     'license-ocr/train',
     'license-ocr/train',
-    ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    list("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
     'license-ocr/validate',
     'license-ocr/validate',
-    ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    list("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 )
 
 # Load model spec
